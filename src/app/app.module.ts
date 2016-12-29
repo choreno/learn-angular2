@@ -5,11 +5,17 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { TodosComponent } from './todos/todos.component';
+import { HeaderComponent } from './header/header.component';
+import { StoriesComponent } from './stories/stories.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodosComponent
+    TodosComponent,
+    HeaderComponent,
+    StoriesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
