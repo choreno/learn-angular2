@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core'; //added Input
 
 //Added manually,
-import { HackernewsApiService } from '../hackernews-api.service';
+//import { HackernewsApiService } from '../hackernews-api.service';
 
 @Component({
   selector: 'item',

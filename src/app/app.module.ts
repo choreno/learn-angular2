@@ -17,6 +17,9 @@ import { HackernewsApiService } from './hackernews-api.service';
 //Add routing
 import { routing } from './app.routes';
 
+import { CommentTreeComponent } from './comment-tree/comment-tree.component';
+import { CommentComponent } from './comment/comment.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,9 @@ import { routing } from './app.routes';
     StoriesComponent,
     FooterComponent,
     ItemComponent,
-    ItemCommentsComponent
+    ItemCommentsComponent,
+    CommentTreeComponent,
+    CommentComponent
   ],
 
   imports: [
