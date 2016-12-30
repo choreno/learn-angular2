@@ -9,11 +9,13 @@ import { HeaderComponent } from './header/header.component';
 import { StoriesComponent } from './stories/stories.component';
 import { FooterComponent } from './footer/footer.component';
 import { ItemComponent } from './item/item.component';
+import { ItemCommentsComponent } from './item-comments/item-comments.component';   
 
 //Add service manually, Service name should be matched one is at the export class
 import { HackernewsApiService } from './hackernews-api.service';
-import { ItemCommentsComponent } from './item-comments/item-comments.component';   
 
+//Add routing
+import { routing } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -25,11 +27,14 @@ import { ItemCommentsComponent } from './item-comments/item-comments.component';
     ItemComponent,
     ItemCommentsComponent
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing        // addded route information
   ],
+
   providers: [HackernewsApiService],
   bootstrap: [AppComponent]
 })

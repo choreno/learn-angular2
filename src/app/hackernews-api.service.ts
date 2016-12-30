@@ -30,6 +30,8 @@ export class HackernewsApiService {
 
 
   fetchStories(storyType:string, page:number): Observable<any> {
+    console.log('page:' + page);
+    
     return this.http.get(`${this.baseUrl}/${storyType}?page=${page}`)
       .map(response => response.json());
   }
